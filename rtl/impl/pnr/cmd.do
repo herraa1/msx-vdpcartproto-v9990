@@ -1,0 +1,16 @@
+-d /home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/impl/gwsynthesis/board_proto.vg
+-p GW2AR-18C-QFN88-8
+-pn GW2AR-LV18QN88C8/I7
+-cst /home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/src/board/proto/board_proto.cst
+-cfg /home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/impl/pnr/device.cfg
+-sdc /home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/src/board/proto/board_proto_27M.sdc
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-place_option 2
+-route_option 1
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

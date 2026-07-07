@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//ENhttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Power Analysis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper { width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td {white-space:pre;  border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.thermal_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.Configure_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table th.label {  min-width: 8%; width: 8%; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#Message" style=" font-size: 16px;">Power Messages</a>
+<ul>
+<li><a href="#Configure_Info" style=" font-size: 14px;">Configure Information</a></li>
+</ul>
+</li>
+<li><a href="#Summary" style=" font-size: 16px;">Power Summary</a>
+<ul>
+<li><a href="#Power_Info" style=" font-size: 14px;">Power Information</a></li>
+<li><a href="#Thermal_Info" style=" font-size: 14px;">Thermal Information</a></li>
+<li><a href="#Supply_Summary" style=" font-size: 14px;">Supply Information</a></li>
+</ul>
+</li>
+<li><a href="#Detail" style=" font-size: 16px;">Power Details</a>
+<ul>
+<li><a href="#By_Block_Type" style=" font-size: 14px;">Power By Block Type</a></li>
+<li><a href="#By_Hierarchy" style=" font-size: 14px;">Power By Hierarchy</a></li>
+<li><a href="#By_Clock_Domain" style=" font-size: 14px;">Power By Clock Domain</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="Message">Power Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>Power Analysis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>/home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/impl/gwsynthesis/board_proto.vg</td>
+</tr>
+<tr>
+<td class="label">Physical Constraints File</td>
+<td>/home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/src/board/proto/board_proto.cst</td>
+</tr>
+<tr>
+<td class="label">Timing Constraints File</td>
+<td>/home/albert/Documents/02-PROJECTS/msx-v9990/msx-vdpcartproto-v9990/rtl/src/board/proto/board_proto_27M.sdc</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.9.03 Education</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW2AR-LV18QN88C8/I7</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW2AR-18</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>C</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Tue Jul  7 11:25:51 2026
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2024 Gowin Semiconductor Corporation. All rights reserved.</td>
+</tr>
+</table>
+<h2><a name="Configure_Info">Configure Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Grade</td>
+<td>Commercial</td>
+</tr>
+<tr>
+<td class="label">Process</td>
+<td>Typical</td>
+</tr>
+<tr>
+<td class="label">Ambient Temperature</td>
+<td>25.000
+</tr>
+<tr>
+<td class="label">Use Custom Theta JA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Heat Sink</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Air Flow</td>
+<td>LFM_0</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta SA</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Board Thermal Model</td>
+<td>None</td>
+</tr>
+<tr>
+<td class="label">Use Custom Theta JB</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Related Vcd File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Related Saif File</td>
+<td></td>
+</tr>
+<tr>
+<td class="label">Filter Glitches</td>
+<td>false</td>
+</tr>
+<tr>
+<td class="label">Default IO Toggle Rate</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td class="label">Default Remain Toggle Rate</td>
+<td>0.125</td>
+</tr>
+</table>
+<h1><a name="Summary">Power Summary</a></h1>
+<h2><a name="Power_Info">Power Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Total Power (mW)</td>
+<td>398.127</td>
+</tr>
+<tr>
+<td class="label">Quiescent Power (mW)</td>
+<td>122.799</td>
+</tr>
+<tr>
+<td class="label">Dynamic Power (mW)</td>
+<td>275.328</td>
+</tr>
+</table>
+<h2><a name="Thermal_Info">Thermal Information:</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label">Junction Temperature</td>
+<td>36.880</td>
+</tr>
+<tr>
+<td class="label">Theta JA</td>
+<td>29.840</td>
+</tr>
+<tr>
+<td class="label">Max Allowed Ambient Temperature</td>
+<td>73.120</td>
+</tr>
+</table>
+<h2><a name="Supply_Summary">Supply Information:</a></h2>
+<table class="summary_table">
+<tr>
+<th class="label">Voltage Source</th>
+<th class="label">Voltage</th>
+<th class="label">Dynamic Current(mA)</th>
+<th class="label">Quiescent Current(mA)</th>
+<th class="label">Power(mW)</th>
+</tr>
+<tr>
+<td>VCC</td>
+<td>1.000</td>
+<td>222.269</td>
+<td>70.002</td>
+<td>292.271</td>
+</tr>
+<tr>
+<td>VCCX</td>
+<td>3.300</td>
+<td>6.814</td>
+<td>15.000</td>
+<td>71.985</td>
+</tr>
+<tr>
+<td>VCCIO33</td>
+<td>3.300</td>
+<td>9.265</td>
+<td>0.999</td>
+<td>33.872</td>
+</tr>
+</table>
+<h1><a name="Detail">Power Details</a></h1>
+<h2><a name="By_Block_Type">Power By Block Type:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Block Type</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Static Power(mW)</th>
+<th class="label">Average Toggle Rate(millions of transitions/sec)</th>
+</tr>
+<tr>
+<td>Logic</td>
+<td>21.454</td>
+<td>NA</td>
+<td>11.219</td>
+</tr>
+<tr>
+<td>IO</td>
+<td>75.557
+<td>15.615
+<td>13.282
+</tr>
+<tr>
+<td>BSRAM</td>
+<td>168.458
+<td>NA</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>PLL</td>
+<td>25.418
+<td>NA</td>
+<td>NA</td>
+</tr>
+</table>
+<h2><a name="By_Hierarchy">Power By Hierarchy:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Hierarchy Entity</th>
+<th class="label">Total Power(mW)</th>
+<th class="label">Block Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>BOARD_PROTO_TOP</td>
+<td>215.330</td>
+<td>215.330(215.328)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/</td>
+<td>0.060</td>
+<td>0.060(0.044)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a0/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a1/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a2/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a3/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a4/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a5/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a6/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_a7/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d0_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d1_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d2_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d3_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d4_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d5_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d6_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_d7_in/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_niorq/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_nrd/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_nreset/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_bus/u_nwr/</td>
+<td>0.002</td>
+<td>0.002(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_clk/</td>
+<td>25.418</td>
+<td>25.418(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/</td>
+<td>177.484</td>
+<td>177.484(177.484)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_boot/</td>
+<td>0.003</td>
+<td>0.003(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/</td>
+<td>177.480</td>
+<td>177.480(177.443)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/</td>
+<td>177.443</td>
+<td>177.443(177.434)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/</td>
+<td>14.222</td>
+<td>14.222(10.435)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_bitmsk/</td>
+<td>5.460</td>
+<td>5.460(5.365)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_bitmsk/u_16bpp/</td>
+<td>1.176</td>
+<td>1.176(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_bitmsk/u_2bpp/</td>
+<td>1.516</td>
+<td>1.516(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_bitmsk/u_4bpp/</td>
+<td>1.390</td>
+<td>1.390(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_bitmsk/u_8bpp/</td>
+<td>1.283</td>
+<td>1.283(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_dst_addr/</td>
+<td>0.092</td>
+<td>0.092(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_dst_cnt/</td>
+<td>0.054</td>
+<td>0.054(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_fifo/</td>
+<td>4.681</td>
+<td>4.681(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_src_addr/</td>
+<td>0.094</td>
+<td>0.094(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_blit/u_src_cnt/</td>
+<td>0.053</td>
+<td>0.053(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_bp/</td>
+<td>52.186</td>
+<td>52.186(52.030)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_bp/u_gen/</td>
+<td>34.755</td>
+<td>34.755(34.557)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_bp/u_gen/u_buff/</td>
+<td>34.557</td>
+<td>34.557(34.409)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_bp/u_gen/u_buff/u_mem0/</td>
+<td>17.204</td>
+<td>17.204(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_bp/u_gen/u_buff/u_mem1/</td>
+<td>17.204</td>
+<td>17.204(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_bp/u_sht_buf/</td>
+<td>17.276</td>
+<td>17.276(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_clk/</td>
+<td>0.048</td>
+<td>0.048(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_decode/</td>
+<td>16.618</td>
+<td>16.618(16.213)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_decode/u_delay/</td>
+<td>8.108</td>
+<td>8.108(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_decode/u_ybuff/</td>
+<td>8.106</td>
+<td>8.106(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pa/</td>
+<td>16.037</td>
+<td>16.037(15.916)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pa/u_gen/</td>
+<td>0.437</td>
+<td>0.437(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pa/u_sht_buf/</td>
+<td>15.479</td>
+<td>15.479(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pal/</td>
+<td>23.368</td>
+<td>23.368(23.310)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pal/u_reg/</td>
+<td>23.310</td>
+<td>23.310(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pb/</td>
+<td>16.031</td>
+<td>16.031(15.910)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pb/u_gen/</td>
+<td>0.432</td>
+<td>0.432(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pb/u_sht_buf/</td>
+<td>15.478</td>
+<td>15.478(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_port/</td>
+<td>0.746</td>
+<td>0.746(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_pri/</td>
+<td>0.047</td>
+<td>0.047(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_ram/</td>
+<td>0.308</td>
+<td>0.308(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_ram_vc/</td>
+<td>0.129</td>
+<td>0.129(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_sel/</td>
+<td>0.028</td>
+<td>0.028(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_sp/</td>
+<td>37.129</td>
+<td>37.129(32.422)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_sp/u_pat/</td>
+<td>32.422</td>
+<td>32.422(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_tg/</td>
+<td>0.537</td>
+<td>0.537(0.036)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_main/u_v9990/u_vdp/u_tg/u_tbl/</td>
+<td>0.036</td>
+<td>0.036(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_sdram/</td>
+<td>0.346</td>
+<td>0.346(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/</td>
+<td>0.222</td>
+<td>0.222(0.202)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/DVI_TX_Top_inst/</td>
+<td>0.199</td>
+<td>0.199(0.199)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/DVI_TX_Top_inst/rgb2dvi_inst/</td>
+<td>0.199</td>
+<td>0.199(0.199)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_b/</td>
+<td>0.066</td>
+<td>0.066(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_g/</td>
+<td>0.066</td>
+<td>0.066(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/DVI_TX_Top_inst/rgb2dvi_inst/TMDS8b10b_inst_r/</td>
+<td>0.067</td>
+<td>0.067(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/u_dly0_b/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/u_dly0_g/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_tmds/u_dly0_r/</td>
+<td>0.001</td>
+<td>0.001(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_uma/</td>
+<td>0.193</td>
+<td>0.193(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/</td>
+<td>11.604</td>
+<td>11.604(11.572)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/u_buff_b/</td>
+<td>3.856</td>
+<td>3.856(2.916)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/u_buff_b/u_buf/</td>
+<td>2.916</td>
+<td>2.916(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/u_buff_g/</td>
+<td>3.857</td>
+<td>3.857(2.916)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/u_buff_g/u_buf/</td>
+<td>2.916</td>
+<td>2.916(0.000)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/u_buff_r/</td>
+<td>3.859</td>
+<td>3.859(2.916)</td>
+<tr>
+<td>BOARD_PROTO_TOP/u_upscan/u_buff_r/u_buf/</td>
+<td>2.916</td>
+<td>2.916(0.000)</td>
+</table>
+<h2><a name="By_Clock_Domain">Power By Clock Domain:</a></h2>
+<table class="detail_table">
+<tr>
+<th class="label">Clock Domain</th>
+<th class="label">Clock Frequency(Mhz)</th>
+<th class="label">Total Dynamic Power(mW)</th>
+</tr>
+<tr>
+<td>CLK_BASE</td>
+<td>108.000</td>
+<td>192.234</td>
+</tr>
+<tr>
+<td>DCLK</td>
+<td>14.400</td>
+<td>3.098</td>
+</tr>
+<tr>
+<td>NO CLOCK DOMAIN</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>CLK_TMDS_P</td>
+<td>27.000</td>
+<td>8.738</td>
+</tr>
+<tr>
+<td>CLK_TMDS_S</td>
+<td>135.000</td>
+<td>0.018</td>
+</tr>
+<tr>
+<td>CLK_27M</td>
+<td>27.000</td>
+<td>11.297</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

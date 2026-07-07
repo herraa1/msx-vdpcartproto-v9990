@@ -1,0 +1,46 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/board/board_id.sv" type="file.verilog" enable="1"/>
+        <File path="src/board/proto/board_proto_bus.sv" type="file.verilog" enable="1"/>
+        <File path="src/board/proto/board_proto_clock.sv" type="file.verilog" enable="1"/>
+        <File path="src/board/proto/board_proto_config.sv" type="file.verilog" enable="1"/>
+        <File path="src/board/proto/board_proto_tmds.sv" type="file.verilog" enable="1"/>
+        <File path="src/board/proto/dvi_tx/dvi_tx.v" type="file.verilog" enable="1"/>
+        <File path="src/board_proto_top.sv" type="file.verilog" enable="1"/>
+        <File path="src/bootloader.sv" type="file.verilog" enable="1"/>
+        <File path="src/cartridge_v9990.sv" type="file.verilog" enable="1"/>
+        <File path="src/config.sv" type="file.verilog" enable="1"/>
+        <File path="src/main.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/msx/bus.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/ram/ram.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/ram/sdram.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/ram/uma.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_bitmap.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_blit.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_blit_addr.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_blit_bitmask.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_blit_fifo.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_clock.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_color_decode.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_palette.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_pattern.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_port.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_priority.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_ram.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_selector.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_shift_buffer.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_sprite.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/tiny9990/t9990_timing.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/video.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/video_dummy.sv" type="file.verilog" enable="1"/>
+        <File path="src/peripheral/video/video_upscan.sv" type="file.verilog" enable="1"/>
+        <File path="src/board/proto/board_proto.cst" type="file.cst" enable="1"/>
+        <File path="src/board/proto/board_proto_27M.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
