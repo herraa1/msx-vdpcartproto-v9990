@@ -4,8 +4,13 @@ This is a port by @herraa1 of [Shinobu Hashimoto's](https://github.com/buppu3) [
 
 Using this RTL you can repurpose the HRA! V9968 prototype cartridge as a V9990 cartridge and enjoy [MSX software written for the V9990 VDP](https://www.msx.org/wiki/Category:V9990).
 
+[<img src="images/omega-with-vdp-cart-flashed-with-v9990-rtl-playing-gng_512x.png" width="512"/>](images/omega-with-vdp-cart-flashed-with-v9990-rtl-playing-gng_2048x.png)
+
 > [!NOTE]
 > Successfully tested on all tested MSX machines so far: Omega MSX2+, Tides Rider MSX2+, JFF-TMSHAT MSX1 and Panasonic FS-A1WSX MSX2+.
+
+> [!IMPORTANT]
+> DO NOT ask HRA! for support related to the use of the V9990 RTL on his V9968 prototype cartridge.
 
 
 ## How to build the bitstream on Linux
