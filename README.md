@@ -1,4 +1,4 @@
-# V9990 on HRA! VDP Cartridge Prototype
+# V9990 on HRA! VDP Prototype Cartridge 
 
 This is a port by @herraa1 of [Shinobu Hashimoto's](https://github.com/buppu3) [V9990 RTL](https://github.com/buppu3/tnCart) to [Takayuki Hara's](https://github.com/hra1129) [VDP Prototype Cartridge for V9968](https://github.com/hra1129/V9968_Cartridge).
 
